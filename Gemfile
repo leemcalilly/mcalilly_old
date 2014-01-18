@@ -7,6 +7,7 @@ gem 'foreman'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'haml-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.0'
