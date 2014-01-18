@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: mcalilly_development
+  pool: 5
+  username: mcalilly
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: mcalilly_test
+  pool: 5
+  username: mcalilly
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: mcalilly_production
+  pool: 5
+  username: mcalilly
+  password:
