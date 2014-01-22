@@ -24,7 +24,7 @@ describe "Public" do
     end
     
     it "has the right content" do
-      page.should have_content("Look out honey cause I'm using technology.")
+      page.should have_content("Look out honey 'cause I'm using technology.")
     end
   end
   
