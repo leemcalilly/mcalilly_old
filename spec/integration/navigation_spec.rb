@@ -6,11 +6,11 @@ describe "Navigation" do
   end
   
   it "has the right links" do
-    page.should have_content("Projects")
-    page.should have_content("Writing")
-    page.should have_content("Music")
-    page.should have_content("Photos")
-    page.should have_content("Video")
+    page.should have_link("Projects")
+    page.should have_link("Writing")
+    page.should have_link("Music")
+    page.should have_link("Photos")
+    page.should have_link("Video")
   end
   
   it "has a working Projects link" do
