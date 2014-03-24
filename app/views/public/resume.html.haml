@@ -2,9 +2,19 @@
 
 %header
   .row
-    .large-8.columns
-      %p Lee McAlilly is an entrepreneur, web developer, and musician. His latest endeavor is making high-quality products for musicians as Co-Founder of Original Fuzz. He enjoys recording and performing music with drums, bass and guitar, making websites, and creating music videos. Get in touch if there's a way you think we could work together.
-      
+    .large-8.columns.bio
+      %p Lee McAlilly is an entrepreneur, web developer, and musician. His latest endeavor is making high-quality products for musicians as Co-Founder of #{ link_to 'Original Fuzz', 'http://originalfuzz.com'}.
+      %p A Mississippi native, he graduated from a hidden-gem, small liberal arts college in Spartanburg, SC called #{ link_to 'Wofford', 'http://wofford.edu'}. He's lived and worked in Nashville, TN, Brooklyn, NY and Jacksonville, FL.
+      %p Lee enjoys recording and performing music, making websites, and creating music videos. #{ link_to 'Get in touch', 'mailto:lee@originalfuzz.com'} if you have work to be done!
+      %ul.inline-list
+        %li= link_to "Experience", "#"
+        %li= link_to "Education", "#"
+        %li= link_to "Projects", "#"
+        %li= link_to "Contact", "#"
+    .large-4.columns
+      =image_tag("resume/lee-mcalilly.jpg", :alt => "Lee McAlilly bio photo")
+  .row
+    %hr
 %section.experience
   .row
     .large-8.columns
@@ -12,24 +22,27 @@
       .article      
         %h2 Original Fuzz
         %h3 Co-founder, 2013 to present
-        %p Co-founder of music products manufacturer. Original Fuzz makes high-quality gear for guitar players. Their flagship product, a handwoven Peruvian guitar strap, has been featured in Vintage Guitar Magazine and on the backs of pros like Built to Spill, Kurt Vile, Frightened Rabbit, and more. Original Fuzz was a member of the inaugural class of the KYN startup accelerator in downtown Jacksonville. As a part of the program they received a seed investment from Jacksonville Jaguars owner Shad Khan. Find out more at OriginalFuzz.com.
+        %p Co-founder of this music products manufacturer and accessories brand. Original Fuzz makes high-quality gear for guitar players. Their flagship product, a handwoven Peruvian guitar strap, has been featured in Vintage Guitar Magazine and on the backs of pros like Built to Spill, Kurt Vile, and Frightened Rabbit. Original Fuzz was a member of the inaugural class of the KYN startup accelerator in downtown Jacksonville. As a part of the program they received a seed investment from Jacksonville Jaguars owner Shad Khan. Find out more at OriginalFuzz.com.
       .article
         %h2 Wingard Creative
-        %h3 Lead Developer, 2012-2013
+        %h3 Lead Developer
+        %H4 2012-2013
         %p As lead developer at Wingard Creative Lee was involved with project management and coding. He worked directly with each client and a team of designers through concept . During this tenure he built many websites with
-
+  .row
+    %hr
 %section.education
   .row
-    .large-12.columns
+    .large-8.columns
       %h1 Education
       .article      
         %h2 Wofford College
         %h3 Summa cum Laude in English, 2005
         %p blurb about wofford
-        
+  .row
+    %hr
 %section.web-projects
   .row
-    .large-12.columns
+    .large-8.columns
       %h1 Web Projects
       .article      
         %ul
@@ -41,12 +54,10 @@
           %li #{ link_to 'Carleton V', 'http://carletonvltd.com'} - HTML, CSS, Expression Engine, Project Management - 2010
           %li #{ link_to 'Electric Orange Creative', 'http://carletonvltd.com'} - Logo, Design, HTML, CSS - 2010
           %li #{ link_to 'Daily Vinyl', 'http://dailyvinyl.com'} - Logo, Design, HTML, CSS, Shopify - 2010
-
+  .row
+    %hr
 %section.contact
   .row
-    .large-12.columns
+    .large-8.columns
       %h1 Contact
-      .article      
-        %h2 Wofford College
-        %h3 Summa cum Laude in English, 2005
-        %p blurb about wofford
+      %p Send me an #{ link_to 'email', 'mailto:lee@originalfuzz.com'}. Follow me on #{ link_to 'Twitter', 'http://twitter.com/leemcalilly'} or #{ link_to 'Instagram', 'http://instagram.com/leemcalilly'}. Check out the quality products I make for musicians at #{ link_to 'Original Fuzz', 'http://originalfuzz.com'}.
