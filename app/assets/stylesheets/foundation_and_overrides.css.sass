@@ -1,12 +1,5 @@
-// Color setup
-$navy: #313a4c
-$light-blue: #627aa2
-$divider-blue: #404c63
-$rust: #cf5745
-$charcoal: #4d4d4f
-$light-gray: #b3b3b3
-$black: #2c323d
-$white: #fff
+// Load variables
+@import 'global-variables'
 
 // We use these as default colors throughout
 $primary-color: $rust !default
@@ -26,6 +19,14 @@ $body-bg: $white
 $body-font-color: $black
 $body-font-family: "courier-std", courier, monospace
 $header-font-family: "courier-std", courier, monospace
+
+// Navigation
+$topbar-bg: $black
+$topbar-dropdown-bg: $black
+$topbar-dropdown-link-color: $white
+$topbar-dropdown-link-bg: $black
+$topbar-dropdown-toggle-color: $white
+$topbar-link-bg-hover: $charcoal
 
 // Load foundation
 @import 'foundation'
