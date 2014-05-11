@@ -32,6 +32,8 @@
         left: -7px
       &.circle-right
         right: -10px
+    #timeline-tampa
+      background: url(#{asset_path('timeline/tampa.png')}) right
     #timeline-original-fuzz
       background: url(#{asset_path('timeline/original-fuzz.png')}) right
     #timeline-jacksonville
@@ -48,7 +50,7 @@
     top: 160px
     left: 50%
     z-index: 0
-    height: 100em
+    height: 70%
 
 // Medium timeline styles
 @media only screen and (max-width: 800px) and (min-width: 768px)
@@ -62,9 +64,7 @@
     width: 25%
   .push-5
     left: 0
-    float: right
   .circle-right
-    float: left
     right: 0px !important
   .circle-left
     left: 0px !important
