@@ -5,4 +5,7 @@ class PublicController < ApplicationController
 
   def resume
   end
+
+  def timeline
+  end
 end
