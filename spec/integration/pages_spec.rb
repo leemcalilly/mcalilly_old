@@ -52,4 +52,26 @@ describe "Public" do
     end
   end
 
+  describe "Timeline" do
+    before(:each) do
+      visit '/timeline'
+    end
+
+    it "renders the resume page" do
+      page.status_code.should be(200)
+    end
+
+    it "has the right title" do
+      page.should have_title("Timeline • Lee McAlilly")
+    end
+
+    it "has the right body class" do
+      page.should have_css('body.public')
+    end
+
+    it "has the right body id" do
+      page.should have_css('body#timeline')
+    end
+  end
+
 end
