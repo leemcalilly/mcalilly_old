@@ -1,10 +1,9 @@
 // Load variables
 @import 'global-variables'
 
-// Timeline styles
 .path-container
-  margin-top: 50px
-  margin-bottom: 70px
+  margin-top: 40px
+  margin-bottom: 60px
   .path-item
     h1
       text-align: center
@@ -15,12 +14,12 @@
     p
       font-size: emCalc(16px)
       line-height: 1.7
-      margin-bottom: 25px
+      margin-bottom: 20px
     a
       font-weight: bold
       font-size: emCalc(14px)
     .circle
-      background-color: $light-gray
+      background-color: #ccc
       background-size: 156px 156px
       border-radius: 50%
       width: 156px
@@ -32,18 +31,19 @@
         left: -7px
       &.circle-right
         right: -10px
-    #timeline-tampa
-      background: url(#{asset_path('timeline/tampa.png')}) right
-    #timeline-original-fuzz
-      background: url(#{asset_path('timeline/original-fuzz.png')}) right
-    #timeline-jacksonville
-      background: url(#{asset_path('timeline/jacksonville.png')}) right
-    #timeline-finks
-      background: url(#{asset_path('timeline/the-finks.png')}) right
-    #timeline-electric-orange
-      background: url(#{asset_path('timeline/electric-orange.png')}) right bottom no-repeat
+      &#event-tampa
+        background: url(#{asset_path('timeline/tampa.png')}) right
+      &#event-original-fuzz
+        background: url(#{asset_path('timeline/original-fuzz.png')}) right
+      &#event-jacksonville
+        background: url(#{asset_path('timeline/jacksonville.png')}) right
+      &#event-finks
+        background: url(#{asset_path('timeline/the-finks.png')}) right
+      &#event-electric-orange
+        background: url(#{asset_path('timeline/electric-orange.png')})
+
   .line
-    background: $light-gray
+    background: #ddd
     width: 2px
     bottom: 0
     position: absolute
@@ -52,33 +52,43 @@
     z-index: 0
     height: 70%
 
-// Medium timeline styles
+// medium timeline styles
 @media only screen and (max-width: 800px) and (min-width: 768px)
   .line
     display: none !important
   .large-5.columns.path-text
     width: 70%
     right: 0
-    margin-left: 15px
+    margin-left: 20px
+  .path-item
+    margin-bottom: 40px
   .path-item .large-7
     width: 25%
   .push-5
     left: 0
+    float: right
   .circle-right
+    float: left
     right: 0px !important
   .circle-left
     left: 0px !important
 
-// Mobile timeline styles
+// mobile timeline styles
 @media only screen and (max-width: 767px)
   .path-container
     text-align: center
-    .circle
-      top: 0
-      right: 0
-      left: 0
-      float: none
-      margin-bottom: 30px !important
-      margin-top: 60px
-      margin-left: auto
-      margin-right: auto
+    .path-item
+      .circle
+        top: 0
+        right: 0
+        left: 0
+        float: none
+        margin-bottom: 20px !important
+        margin-top: 60px
+        margin-left: auto
+        margin-right: auto
+        &.circle-right
+          float: none !important
+          right: 0px
+        &.circle-left
+          left: 0px
