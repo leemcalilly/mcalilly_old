@@ -1,6 +1,5 @@
 class PublicController < ApplicationController
-  layout "resume", only: [:resume]
-  
+
   def index
   end
 
