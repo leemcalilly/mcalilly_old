@@ -8,4 +8,7 @@ class PublicController < ApplicationController
 
   def timeline
   end
+
+  def music
+  end
 end

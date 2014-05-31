@@ -17,6 +17,7 @@ describe "Navigation" do
     within("#footer") do
       page.should have_link("email")
       page.should have_link("Twitter")
+      page.should have_link("Github")
       page.should have_link("Instagram")
       page.should have_link("Original Fuzz")
       page.should have_link("resume")

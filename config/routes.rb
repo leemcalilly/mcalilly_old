@@ -4,4 +4,5 @@ Mcalilly::Application.routes.draw do
 
   get "resume" => "public#resume", :as => "resume"
   get "timeline" => "public#timeline", :as => "timeline"
+  get "music" => "public#music", :as => "music"
 end

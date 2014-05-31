@@ -1,10 +1,11 @@
 = render "shared/head"
 %body{:id => params[:action], :class => params[:controller]}
-    
+
   = render "shared/navigation"
-  
-  = yield
-  
+
+  .main
+    = yield
+
   = render "shared/footer"
-  
+
   = javascript_include_tag "application"
